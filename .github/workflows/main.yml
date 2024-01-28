@@ -16,7 +16,7 @@ jobs:
         with: 
           node-version: '18.x'
       - name: Install Dependencies
-        run: npm install
+        run: "express-graphql": "^0.12.0",
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
         with:
