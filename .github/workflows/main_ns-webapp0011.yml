@@ -23,9 +23,9 @@ jobs:
 
       - name: graphql-http install, build, and test
         run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
+          graphql-http install
+          graphql-http run build --if-present
+          graphql-http run test --if-present
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
